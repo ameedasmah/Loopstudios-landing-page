@@ -1,0 +1,127 @@
+body {
+    max-width: 1440px;
+    box-sizing: border-box;
+    margin: auto;
+    font-size: 15px;
+}
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 0%);
+    --DarkGray: hsl(0, 0%, 55%);
+    --VeryDarkGray: hsl(0, 0%, 41%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 800px) {
+    .wrapper p, .wrapper-Image .white-Text-Bordere {
+        margin-left: -50px;
+    }
+}
+
+@media screen and (min-width: 1028px) {
+    section .interactive-Image, section .Pargraph-Content {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1028px) {
+    section .interactive-second-Image, section .Second-Pargraph-Content {
+        display: none;
+    }
+}
+
+.wrapper-Image {
+    position: relative;
+    background-image: url('./images/desktop/image-hero.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 700px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    margin: 25px 0;
+}
+
+.wrapper p {
+    font-family: 'Alata';
+    font-weight: 400px;
+    color: var(--White);
+    padding-left: 100px;
+    font-size: xx-large;
+}
+
+.wrapper .wrapper-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrapper .wrapper-left a {
+    text-decoration: none;
+    padding: 16px;
+    font-family: 'Alata';
+    font-weight: 400px;
+    color: var(--White);
+    font-size: large;
+}
+
+.wrapper-Image .white-Text-Bordere {
+    position: absolute;
+    top: 250px;
+    left: 100px;
+    border: 3px solid var(--White);
+    max-width: 300px;
+    padding: 1.75rem;
+}
+
+.wrapper-Image .white-Text-Bordere span {
+    text-transform: uppercase;
+    font-size: xx-large;
+    color: var(--White);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+section .interactive-Image {
+    width: 100%;
+    height: auto;
+    margin: 100px 0;
+}
+
+section .interactive-second-Image {
+    position: relative;
+    margin: 100px 0;
+}
+
+section .Pargraph-Content {
+    max-width: 700px;
+    padding-left: 60px;
+}
+
+section .Second-Pargraph-Content {
+    position: absolute;
+    background-color: var(--White);
+    top: 997px;
+    left: 800px;
+    max-width: 562px;
+    height: 200px;
+    font-family: "Josefin Sans", sans-serif;
+    padding: 64px;
+    max-height: 1750px;
+}
