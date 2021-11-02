@@ -1,8 +1,9 @@
 body {
-    max-width: 1440px;
     box-sizing: border-box;
     margin: auto;
     font-size: 15px;
+    font-family: 'Alata';
+    font-weight: 400;
 }
 
 :root {
@@ -17,6 +18,11 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
 }
 
+.layout{
+    max-width: 1100px;
+    margin: auto;
+}
+
 @media screen and (max-width: 800px) {
     .wrapper p, .wrapper-Image .white-Text-Bordere {
         margin-left: -50px;
@@ -27,6 +33,32 @@ h1, h2, h3, h4, h5, h6 {
     section .interactive-Image, section .Pargraph-Content {
         display: none;
     }
+}
+
+@media screen and (max-width: 1028px) {
+    .section1 .section1-Image img {
+    display: none;
+    width: 100%;
+    }
+}
+@media screen and (min-width: 1028px) {
+     section .Second-Pargraph-Content{
+        position: absolute;
+        background-color: var(--White);
+        top: 997px;
+        left: 597px;
+        max-width: 562px;
+        height: 200px;
+        font-family: "Josefin Sans", sans-serif;
+        padding: 64px;
+        max-height: 1750px;
+    }
+}
+
+@media screen and (min-width: 1028px) {
+    .section1-Image2 img{
+display: none;
+   }
 }
 
 @media screen and (max-width: 1028px) {
@@ -56,7 +88,6 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Alata';
     font-weight: 400px;
     color: var(--White);
-    padding-left: 100px;
     font-size: xx-large;
 }
 
@@ -79,7 +110,6 @@ h1, h2, h3, h4, h5, h6 {
 .wrapper-Image .white-Text-Bordere {
     position: absolute;
     top: 250px;
-    left: 100px;
     border: 3px solid var(--White);
     max-width: 300px;
     padding: 1.75rem;
@@ -118,10 +148,55 @@ section .Second-Pargraph-Content {
     position: absolute;
     background-color: var(--White);
     top: 997px;
-    left: 800px;
+    left: 600x;
     max-width: 562px;
     height: 200px;
     font-family: "Josefin Sans", sans-serif;
     padding: 64px;
     max-height: 1750px;
+}
+
+.section1{
+    align-items: center;
+}
+
+.section1 .section1-Image {
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
+margin: 16px 0;
+}
+
+.section1-Image img{
+    width: 350px;
+    object-fit: cover;
+    margin-bottom: 25px;
+}
+
+.section1-Image > div{
+    position: relative;
+}
+
+.section1-Image > div > h5{
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.section1 .section1-Image2{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+flex-wrap: wrap;
+padding-left: 50px;
+margin: 16px;
+}
+.section1 .section1-Image2 img{
+    padding: 16px 0;
+    width: 100%;
 }
